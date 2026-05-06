@@ -1,0 +1,218 @@
+.bmi-block {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 8px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-xs);
+  transition: all 0.2s ease;
+}
+
+.bmi-block:active {
+  background: var(--bg-surface);
+  transform: scale(0.98);
+}
+
+.bmi-block-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+}
+
+.bmi-block-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.bmi-block-icon.yellow {
+  background: var(--green-light);
+  color: var(--green-primary);
+}
+
+.bmi-block-icon.red {
+  background: var(--red-tag-bg);
+  color: var(--red-primary);
+}
+
+.bmi-block-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.bmi-block-subtitle {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.bmi-block-arrow {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.bmi-arrow-right::after {
+  content: '›';
+  font-size: 22px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.bmi-divider {
+  height: 1px;
+  background: var(--divider);
+  margin: 0 16px;
+}
+
+.bmi-section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 20px 4px 10px;
+}
+
+.bmi-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.bmi-button-primary {
+  background: var(--green-primary);
+  color: var(--text-on-primary);
+}
+
+.bmi-button-primary:active {
+  background: var(--green-deep);
+  transform: scale(0.97);
+}
+
+.bmi-button-danger {
+  background: var(--red-primary);
+  color: #FFFFFF;
+}
+
+.bmi-button-danger:active {
+  background: #9E1C1C;
+  transform: scale(0.97);
+}
+
+.bmi-button-outline {
+  background: transparent;
+  border: 1.5px solid var(--green-primary);
+  color: var(--green-deep);
+}
+
+.bmi-button-outline:active {
+  background: var(--green-light);
+}
+
+.bmi-switch {
+  position: relative;
+  width: 50px;
+  height: 28px;
+  border-radius: 14px;
+  background: var(--text-muted);
+  border: 1px solid transparent;
+  transition: background 0.3s ease;
+}
+
+.bmi-switch.active {
+  background: var(--green-primary);
+}
+
+.bmi-switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  transition: transform 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.bmi-switch.active::after {
+  transform: translateX(22px);
+}
+
+.bmi-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bmi-badge-yellow {
+  background: var(--green-light);
+  color: var(--green-deep);
+}
+
+.bmi-badge-red {
+  background: var(--red-tag-bg);
+  color: var(--red-primary);
+}
+
+.bmi-input {
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--bg-primary);
+  border: 1.5px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.bmi-input:focus {
+  border-color: var(--green-primary);
+}
+
+.bmi-input::placeholder {
+  color: var(--text-muted);
+}
+
+.bmi-select {
+  padding: 12px 14px;
+  background: var(--bg-primary);
+  border: 1.5px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none;
+}
+
+.bmi-select:focus {
+  border-color: var(--green-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
