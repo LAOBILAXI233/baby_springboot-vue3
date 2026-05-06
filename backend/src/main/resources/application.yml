@@ -33,7 +33,7 @@ app:
     dir: ./uploads
   ai:
     api-url: https://api.siliconflow.cn/v1/chat/completions
-    api-key: sk-1234567890abcdef1234567890abcdef
+    api-key: 换成你自己的apikey
 
 logging:
   level:
